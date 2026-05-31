@@ -39,10 +39,8 @@ class HATEOASTest {
                 .andExpect(status().isCreated())
                 .andReturn().getResponse().getContentAsString();
 
-        // Извлекаем ID из ответа (упрощённо, можно через jsonPath)
         String id = objectMapper.readTree(response).get("id").asText();
 
-        // Проверяем, что ответ содержит HATEOAS ссылки
         mockMvc.perform(get("/api/users/{id}", id))
                 .andExpect(status().isOk())
                 .andExpect(jsonPath("$.links").exists())
