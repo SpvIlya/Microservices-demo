@@ -1,0 +1,97 @@
+# COMPILED FILES
+target/
+*.class
+*.jar
+*.war
+*.nar
+
+# IDE FILES (IntelliJ IDEA)
+.idea/
+*.iml
+*.iws
+*.ipr
+.settings/
+.project
+.classpath
+.springBeans
+.sts4-cache
+bin/
+out/
+
+# VS CODE
+.vscode/
+*.code-workspace
+
+# LOGS
+logs/
+*.log
+*.log.gz
+log/
+
+# OPERATING SYSTEM FILES
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+Desktop.ini
+
+# MAVEN
+.mvn/
+mvnw
+mvnw.cmd
+pom.xml.tag
+pom.xml.releaseBackup
+pom.xml.versionsBackup
+pom.xml.next
+release.properties
+dependency-reduced-pom.xml
+buildNumber.properties
+.mvn/timing.properties
+.mvn/wrapper/maven-wrapper.jar
+
+# DOCKER
+*.pid
+*.cid
+docker-compose.override.yml
+.dockerignore
+.dockerenv
+
+# SPRING CLOUD / CONFIG
+# Локальные конфигурации
+bootstrap-local.yml
+application-local.properties
+application-dev.properties
+application-prod.yml
+*-local.yml
+*-dev.yml
+
+# Папка с кэшем Git конфигураций (Config Server)
+config-repo-cache/
+
+# KAFKA DATA
+/kafka-data/
+/zookeeper-data/
+*.log
+
+# TEST OUTPUT
+test-output/
+test-report/
+surefire-reports/
+failsafe-reports/
+
+# ACTUATOR / TEMP FILES
+/spring/
+/spring-shell.log
+/.java-version
+/.mvn/
+
+# SECRETS
+*.p12
+*.jks
+*.key
+*.crt
+.env
+.secrets
