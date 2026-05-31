@@ -11,12 +11,11 @@
     <packaging>pom</packaging>
 
     <modules>
-        <module>eureka-server</module>
-        <module>config-server</module>
-        <module>api-gateway</module>
-        <module>user-service</module>
-        <module>notification-service</module>
+        <module>Eureka-Server</module>
+        <module>Config-Server</module>
         <module>Api-Gateway</module>
+        <module>User-Service</module>
+        <module>Notification-Service</module>
     </modules>
 
     <parent>
