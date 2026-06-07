@@ -1,0 +1,17 @@
+spring:
+  cloud:
+    config:
+      enabled: false
+  kafka:
+    bootstrap-servers: kafka:9092
+    consumer:
+      group-id: notification-group
+
+kafka:
+  topic:
+    user-events: user-events
+
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://eureka-server:8761/eureka/

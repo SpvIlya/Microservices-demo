@@ -95,3 +95,34 @@ failsafe-reports/
 *.crt
 .env
 .secrets
+
+# Docker volume data
+*.db
+*.sqlite
+postgres-data/
+mysql-data/
+
+# Config Server
+/config-repo/.git/
+/config-repo/.gitignore
+
+# IDE дополнительные файлы
+.idea/**/workspace.xml
+.idea/**/tasks.xml
+.idea/**/usage.statistics.xml
+.idea/**/dictionaries
+.idea/**/shelf
+
+# Сгенерированные файлы OpenAPI/Swagger
+api-docs/
+swagger-ui/
+
+# Локальные настройки Spring Boot
+*.pid
+*.sh
+*.bat
+
+# Временные файлы
+*.tmp
+*.temp
+*.cache
