@@ -8,6 +8,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.autoconfigure.web.servlet.AutoConfigureMockMvc;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.http.MediaType;
+import org.springframework.test.context.ActiveProfiles;
 import org.springframework.test.web.servlet.MockMvc;
 
 import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.get;
@@ -17,6 +18,7 @@ import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.
 
 @SpringBootTest(classes = UserServiceApplication.class)
 @AutoConfigureMockMvc
+@ActiveProfiles("test")
 class HATEOASTest {
 
     @Autowired
@@ -27,7 +29,6 @@ class HATEOASTest {
 
     @Test
     void testHATEOASLinksInGetUserResponse() throws Exception {
-        // Сначала создаём пользователя
         CreateUserRequest request = new CreateUserRequest();
         request.setName("HATEOAS Test");
         request.setEmail("hateoas@example.com");
